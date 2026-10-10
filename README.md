@@ -28,13 +28,13 @@ The realm needs a Yggdrasil revision with independent-branch execution
 (`failure_policy="continue_independent"`). That support is on the `dev` branch
 and not yet on `main`, so cloning Yggdrasil's default branch is not enough.
 There is no released minimum version yet. The realm was tested against `dev` at
-`0a0e237db8355a05358b14d09bdf922e022d3275`.
+`a461df6bd8606cd97ad0b669ef6e4c4f23160e43`.
 
 ```bash
 git clone https://github.com/NationalGenomicsInfrastructure/Yggdrasil.git
 git -C Yggdrasil checkout dev
 # Or the tested revision:
-# git -C Yggdrasil checkout 0a0e237db8355a05358b14d09bdf922e022d3275
+# git -C Yggdrasil checkout a461df6bd8606cd97ad0b669ef6e4c4f23160e43
 pip install -e Yggdrasil
 
 git clone https://github.com/NationalGenomicsInfrastructure/demux_realm.git
@@ -52,7 +52,7 @@ pip install -e ".[ygg,dev]"
 To pin the tested revision without a local clone:
 
 ```bash
-pip install "yggdrasil @ git+https://github.com/NationalGenomicsInfrastructure/Yggdrasil.git@0a0e237db8355a05358b14d09bdf922e022d3275"
+pip install "yggdrasil @ git+https://github.com/NationalGenomicsInfrastructure/Yggdrasil.git@a461df6bd8606cd97ad0b669ef6e4c4f23160e43"
 ```
 
 ## Yggdrasil Entry Point

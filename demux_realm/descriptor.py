@@ -1,8 +1,7 @@
 from typing import Any
 
-from lib.core_utils.event_types import EventType
-from lib.watchers.watchspec import WatchSpec
 from yggdrasil.core.realm import RealmDescriptor
+from yggdrasil.watchers import EventType, WatchSpec
 
 from .handler import DemuxHandler
 from .utils import normalize_flowcell_id

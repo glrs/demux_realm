@@ -2,10 +2,10 @@ import logging
 import os
 from typing import Any, ClassVar
 
-from lib.core_utils.event_types import EventType
 from yggdrasil.flow.base_handler import BaseHandler
 from yggdrasil.flow.model import Plan
 from yggdrasil.flow.planner import PlanDraft, PlanningContext
+from yggdrasil.watchers import EventType
 
 from .recipes import (
     UPSERT_X_FLOWCELL,
